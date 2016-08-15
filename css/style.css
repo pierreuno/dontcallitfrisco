@@ -47,22 +47,23 @@ p{
 .navbar-nav>li>a>span.title { height:56px; font-size: 45px; font-weight: bold; width: 100%; }
 .nav>li>a:hover { background-color: #ffffff; }
 
- .play-button { position:absolute; width:100%; height:100% }
+.play-video { position: relative; display: block; }
 
+.play-button { position:absolute; width:100%; height:100%;}
 .play-button:hover:before { display: block; }
-
  .play-button:before {
-     content: "\e029";
-     position: absolute;
-     width: 100%;
-     height: 80px;
+     margin: auto;
+     background-color: #ce1312;
+     width: 100px;
+     height: 60px;
      text-align: center;
-     color: #000;
+     color: #ffffff;
      font-size: 80px;
-     display: table-cell;
-     vertical-align: middle;
-     top: 40%;
      display: none;
+     border-radius: 15px;
+     font-size: 30px;
+     padding-top: 13px;
+     margin-top: 210px;
  }
 
  input[name="newsletter_email"] {
