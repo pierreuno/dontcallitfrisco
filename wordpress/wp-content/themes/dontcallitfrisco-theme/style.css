@@ -1,0 +1,142 @@
+/*
+Theme Name: Don't Call It Frisco
+Theme URI: http://dontcallitfrisco.tv
+Description: Don't Call It Frisco theme
+Author: Pierre Hunault
+Author URI: http://pierrehunault.com/
+Version: 0.1.0
+*/
+
+@font-face {
+  font-family: 'GothamHTF-Medium';
+  src: local('GothamHTF-Medium'),
+       url('fonts/GothamHTF-Medium.ttf') format('truetype'),
+       url('fonts/GothamHTF-Medium.woff') format('woff');
+}
+
+html * { font-family:'GothamHTF-Medium'; }
+*:focus { outline:none; }
+
+h2 {
+  text-transform: uppercase;
+  padding-left: 120px;
+  font-size:14px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+}
+h2:before {
+  content: "";
+  position: absolute;
+  height:1px;
+  width:100px;
+  border-top: solid 2px #b1b1b1;
+  left: 0px;
+  top: 5px;
+}
+
+p{
+  font-size:12px;
+}
+
+.featured-background { background-color: rgba(215, 215, 215, 0.1); }
+.bottom-30 { padding-bottom: 30px; }
+
+.navbar-nav { width:100%;  }
+.navbar-nav>li { width:20%; }
+.navbar-nav>li>a { font-family:'GothamHTF-Medium';
+                   font-weight:normal;
+                   font-size:12px;
+                   text-align: center;
+                   letter-spacing: 3px;
+                   color:#000;
+                   text-transform: uppercase;}
+.navbar-nav>li>a>span { display:block; }
+.navbar-nav>li>a>span.header { height:35px; font-size: 16px; width: 100%; letter-spacing: 5px;}
+.navbar-nav>li>a>span.title { height:56px; font-size: 45px; font-weight: bold; width: 100%; }
+.nav>li>a:hover { background-color: #ffffff; }
+
+.play-video { position: relative; display: block; }
+
+.play-button { position:absolute; width:100%; height:100%;}
+.play-button:before {
+     margin: auto;
+     background-color: #ce1312;
+     width: 100px;
+     height: 60px;
+     text-align: center;
+     color: #ffffff;
+     font-size: 80px;
+     display: block;
+     border-radius: 15px;
+     font-size: 30px;
+     padding-top: 13px;
+     margin-top: 210px;
+     opacity: 0.7;
+ }
+ .play-button:hover:before {
+   opacity: 1.0;
+   box-shadow: outset 0 2px 2px 0 rgba(0, 0, 0, 0.17);
+ }
+
+input[name="signup_email"] {
+	width: 390px;
+ 	height: 35px;
+ 	border-radius: 6px;
+ 	background-color: #ffffff;
+ 	box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.17);
+ 	border: solid 1px #dadada;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.sign-up-loader{
+  display: none;
+  text-align: center;
+}
+
+.sign-up-loader img{
+  height: 50px;
+}
+
+.email-list-wrapper {
+  height:70px;
+}
+
+.sign-up-error {
+  color: #ce1312;
+}
+
+.sign-up-thank-you{
+  text-align: center;
+  height: 35px;
+  font-size: 20px;
+}
+ .email-list-title {
+ 	width: 550px;
+ 	height: 15px;
+ 	font-size: 12px;
+ 	font-weight: 500;
+ 	letter-spacing: 2px;
+ 	text-align: justify;
+ 	color: #000000;
+ }
+
+ .j-o-i-n {
+ 	width: 77px;
+ 	height: 35px;
+ 	border-radius: 6px;
+ 	background-color: #ce1312;
+ 	border: solid 1px #dadada;
+ 	font-family: GothamHTF;
+ 	font-size: 12px;
+ 	font-weight: bold;
+ 	letter-spacing: 3px;
+ 	color: #ffffff;
+ }
+
+ .email-list-centered{
+   width: 480px;
+   float: none;
+   margin: 0 auto;
+ }
