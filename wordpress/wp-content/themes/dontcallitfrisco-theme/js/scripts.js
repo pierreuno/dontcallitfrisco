@@ -24,8 +24,7 @@
 	  }
 
 		$('input[name="signup_email"]').on('keyup', function(){
-			var dom_container = $(this).parent();
-			dom_container.find('.sign-up-error').remove();
+			$('.sign-up-error').remove();
 		});
 
 		$('.sign-up').on('click', function(e){
@@ -39,10 +38,10 @@
 			var signup_button = $('button.sign-up');
 			var dom_container = signup_button.parent();
 			var email_input = $('input[name="signup_email"]');
-			var loader = dom_container.find('.sign-up-loader');
+			var loader = $('.sign-up-loader');
 			var email_val = email_input.val();
 
-			dom_container.find('.sign-up-error').remove();
+			$('.sign-up-error').remove();
 
 			if(validateEmail(email_val)){
 				email_input.hide();

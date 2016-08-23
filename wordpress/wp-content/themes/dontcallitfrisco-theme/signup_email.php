@@ -6,6 +6,6 @@ $email = $_POST['email'];
 $msg = "Email: " . $email;
 
 // send email
-mail("phunault@gmail.com", "Don't Call It Frisco Newsletter Sign Up", $msg);
+mail("matt@vibrantfilms.com", "Don't Call It Frisco Newsletter Sign Up", $msg);
 
 ?>
