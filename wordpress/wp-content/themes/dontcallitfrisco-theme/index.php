@@ -27,7 +27,39 @@
 	</div>
 
 	<div class="container">
-		<!-- Example row of columns -->
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Episodes</h2>
+				<div class="row video-library">
+					<div class="col-md-4 video-entity">
+						<div class="video-thumbnail">
+							<span class="glyphicon glyphicon-play play-button"></span>
+							<img src="img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco" style="width:100%;"/>
+						</div>
+						<h4>Episode 4</h4>
+						<p class="short-description">The show is written/directed by Matt Barkin but it takes a village!</p>
+					</div>
+					<div class="col-md-4 video-entity">
+						<img src="img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco" style="width:100%;"/>
+						<h4>Episode 3</h4>
+						<p class="short-description">The show is written/directed by Matt Barkin but it takes a village!</p>
+					</div>
+					<div class="col-md-4 video-entity">
+						<img src="img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco" style="width:100%;"/>
+						<h4>Episode 2</h4>
+						<p class="short-description">The show is written/directed by Matt Barkin but it takes a village!</p>
+					</div>
+					<div class="col-md-4 video-entity">
+						<img src="img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco" style="width:100%;"/>
+						<h4>Episode 1 - The one with the dragon tatoo</h4>
+						<p class="short-description">The show is written/directed by Matt Barkin but it takes a village!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<h2>About Us</h2>

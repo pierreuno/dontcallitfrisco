@@ -17,67 +17,26 @@ Version: 0.1.0
 html * { font-family:'GothamHTF-Medium'; }
 *:focus { outline:none; }
 
-h2 {
-  text-transform: uppercase;
-  padding-left: 120px;
-  font-size:14px;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 15px;
-}
-h2:before {
-  content: "";
-  position: absolute;
-  height:1px;
-  width:100px;
-  border-top: solid 2px #b1b1b1;
-  left: 0px;
-  top: 5px;
-}
+h2 { text-transform: uppercase; padding-left: 120px; font-size:14px; display: inline-block; position: relative; margin-bottom: 15px; }
+h2:before { content: ""; position: absolute; height:1px; width:100px; border-top: solid 2px #b1b1b1; left: 0px; top: 5px; }
 
-p{
-  font-size:12px;
-}
+p { font-size:12px; }
 
 .featured-background { background-color: rgba(215, 215, 215, 0.1); }
 .bottom-30 { padding-bottom: 30px; }
 
 .navbar-nav { width:100%;  }
 .navbar-nav>li { width:20%; }
-.navbar-nav>li>a { font-family:'GothamHTF-Medium';
-                   font-weight:normal;
-                   font-size:12px;
-                   text-align: center;
-                   letter-spacing: 3px;
-                   color:#000;
-                   text-transform: uppercase;}
+.navbar-nav>li>a { font-family:'GothamHTF-Medium'; font-weight:normal; font-size:12px; text-align: center; letter-spacing: 3px; color:#000; text-transform: uppercase;}
 .navbar-nav>li>a>span { display:block; }
 .navbar-nav>li>a>span.header { height:35px; font-size: 16px; width: 100%; letter-spacing: 5px;}
 .navbar-nav>li>a>span.title { height:56px; font-size: 45px; font-weight: bold; width: 100%; }
 .nav>li>a:hover { background-color: #ffffff; }
 
 .play-video { position: relative; display: block; }
-
-.play-button { position:absolute; width:100%; height:100%;}
-.play-button:before {
-     margin: auto;
-     background-color: #ce1312;
-     width: 100px;
-     height: 60px;
-     text-align: center;
-     color: #ffffff;
-     font-size: 80px;
-     display: block;
-     border-radius: 15px;
-     font-size: 30px;
-     padding-top: 13px;
-     margin-top: 210px;
-     opacity: 0.7;
- }
- .play-button:hover:before {
-   opacity: 1.0;
-   box-shadow: outset 0 2px 2px 0 rgba(0, 0, 0, 0.17);
- }
+.play-button { position:absolute; top:50%; left:50%; margin-left: -50px; margin-top: -30px; }
+.play-button:before { margin: auto; background-color: #ce1312; width: 100px; height: 60px; text-align: center; color: #ffffff;font-size: 80px;display: block; border-radius: 15px; font-size: 30px; padding-top: 13px; opacity: 0.7; position: absolute; }
+.play-button:hover:before { opacity: 1.0; box-shadow: outset 0 2px 2px 0 rgba(0, 0, 0, 0.17); }
 
 input[name="signup_email"] {
 	width: 390px;
@@ -90,29 +49,16 @@ input[name="signup_email"] {
   padding-left: 10px;
 }
 
-.sign-up-loader{
-  display: none;
-  text-align: center;
-}
+.sign-up-loader{ display: none; text-align: center; }
 
-.sign-up-loader img{
-  height: 50px;
-}
+.sign-up-loader img{ height: 50px; }
 
-.email-list-wrapper {
-  height:70px;
-}
+.email-list-wrapper { height:70px; }
 
-.sign-up-error {
-  color: #ce1312;
-}
+.sign-up-error { color: #ce1312; }
+.sign-up-thank-you { text-align: center; height: 35px; font-size: 20px; }
 
-.sign-up-thank-you{
-  text-align: center;
-  height: 35px;
-  font-size: 20px;
-}
- .email-list-title {
+.email-list-title {
  	width: 550px;
  	height: 15px;
  	font-size: 12px;
@@ -120,7 +66,7 @@ input[name="signup_email"] {
  	letter-spacing: 2px;
  	text-align: justify;
  	color: #000000;
- }
+}
 
  .j-o-i-n {
  	width: 77px;
@@ -140,3 +86,14 @@ input[name="signup_email"] {
    float: none;
    margin: 0 auto;
  }
+
+
+
+ .video-library .video-entity { padding-top:10px; padding-bottom:10px; cursor: pointer; position: relative;}
+ .video-library .video-thumbnail { position:relative; }
+ .video-library .video-entity .play-button { display:none; }
+ .video-library .video-entity .play-button:before { opacity: 0.7; box-shadow: outset 0 2px 2px 0 rgba(0, 0, 0, 0.17); }
+ .video-library .video-entity:hover .play-button { display:block; }
+ .video-library .video-entity img { width:100%; }
+ .video-library .video-entity h4 { text-transform:uppercase; font-size:12px; float:left; width:35%; }
+ .video-library .video-entity p.short-description { float:left; width:65%; margin-top: 10px; font-size: 10px;}
