@@ -1,12 +1,14 @@
 <?php get_header(); ?>
 
-	<div class="container featured-background bottom-30">
-		<div class="row">
-			<div class="col-md-12">
-				<a href="#" class="play-video" data-youtube-id="9bZkp7q19f0">
-					<img src="/wp-content/themes/dontcallitfrisco-theme/img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco" style="width:100%"/>
-					<span class="glyphicon glyphicon-play play-button"></span>
-				</a>
+	<div class="featured-background bottom-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#" class="play-video" data-youtube-id="9bZkp7q19f0">
+						<img src="/wp-content/themes/dontcallitfrisco-theme/img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco" style="width:100%"/>
+						<span class="glyphicon glyphicon-play play-button"></span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -31,26 +33,37 @@
 			<div class="col-md-12">
 				<h2>Episodes</h2>
 				<div class="row video-library">
+
 					<div class="col-md-4 video-entity">
 						<div class="video-thumbnail">
 							<span class="glyphicon glyphicon-play play-button"></span>
-							<img src="img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco" style="width:100%;"/>
+							<img src="/wp-content/themes/dontcallitfrisco-theme/img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco"/>
 						</div>
 						<h4>Episode 4</h4>
 						<p class="short-description">The show is written/directed by Matt Barkin but it takes a village!</p>
 					</div>
+
 					<div class="col-md-4 video-entity">
-						<img src="img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco" style="width:100%;"/>
+						<div class="video-thumbnail">
+							<span class="glyphicon glyphicon-play play-button"></span>
+							<img src="/wp-content/themes/dontcallitfrisco-theme/img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco"/>
+						</div>
 						<h4>Episode 3</h4>
 						<p class="short-description">The show is written/directed by Matt Barkin but it takes a village!</p>
 					</div>
 					<div class="col-md-4 video-entity">
-						<img src="img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco" style="width:100%;"/>
+						<div class="video-thumbnail">
+							<span class="glyphicon glyphicon-play play-button"></span>
+							<img src="/wp-content/themes/dontcallitfrisco-theme/img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco"/>
+						</div>
 						<h4>Episode 2</h4>
 						<p class="short-description">The show is written/directed by Matt Barkin but it takes a village!</p>
 					</div>
 					<div class="col-md-4 video-entity">
-						<img src="img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco" style="width:100%;"/>
+						<div class="video-thumbnail">
+							<span class="glyphicon glyphicon-play play-button"></span>
+							<img src="/wp-content/themes/dontcallitfrisco-theme/img/13898372_10104107589060424_1594539964_o.jpg" alt="Don't Call It Frisco"/>
+						</div>
 						<h4>Episode 1 - The one with the dragon tatoo</h4>
 						<p class="short-description">The show is written/directed by Matt Barkin but it takes a village!</p>
 					</div>
