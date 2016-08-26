@@ -13,21 +13,22 @@
 
 	    loadYoutubeVideoEmbed(dom, youtube_id);
 
-			if(that.hasClass('feature-video')){
-				scrollToVideoPlayer();
+			if( that.hasClass('feature-video') ){
+				scrollTo('.play-video-wrapper');
 			}
 	  });
 
 	  function loadYoutubeVideoEmbed(dom, youtube_id){
 	    var width = dom.width();
 	    var height = dom.height();
-	    var html = '<iframe width="'+width+'" height="'+height+'" src="https://www.youtube.com/embed/'+youtube_id+'?autoplay=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>';
+	    var html = '<iframe width="'+width+'" height="'+height+'" src="https://www.youtube.com/embed/'+youtube_id+'?autoplay=1&showinfo=1&rel=0&controls=1&theme=light" frameborder="0" allowfullscreen></iframe>';
 	    dom.html(html);
 	  }
 
-		function scrollToVideoPlayer(){
+		function scrollTo(class_name){
+			var top = $(class_name).offset().top;
 			$('html, body').animate({
-				scrollTop: $('.play-video-wrapper').offset().top
+				scrollTop: top
 			}, 1000);
 		}
 
