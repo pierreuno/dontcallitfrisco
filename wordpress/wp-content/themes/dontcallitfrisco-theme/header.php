@@ -32,11 +32,19 @@
 
 		<nav class="navbar featured-background">
 	    <div class="container">
-	      <div id="navbar" class="collapse navbar-collapse">
+
+				<div class="logo">
+					<a href="<?php echo home_url(); ?>">
+						<div class="header">Don't Call It</div>
+						<div class="title">Frisco</div>
+					</a>
+				</div>
+
+	      <div id="navbar">
 	        <ul class="nav navbar-nav">
 	          <li><a href="#"><span class="header"></span><span>Home</span></a></li>
 	          <li><a href="#"><span class="header"></span><span>Episodes</span></a></li>
-	          <li><a href="<?php echo home_url(); ?>"><span class="header">Don't Call It</span><span class="title">Frisco</span></a></li>
+						<li class="menu-spacer"><a></a></li>
 	          <li><a href="#"><span class="header"></span><span>Frisco</span></a></li>
 	          <li><a href="#"><span class="header"></span><span>About Us</a></li>
 	        </ul>

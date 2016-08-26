@@ -12,13 +12,6 @@
 								<?php the_post_thumbnail('featured') ?>
 								<span class="glyphicon glyphicon-play play-button"></span>
 							</a>
-
-
-							<!-- LikeBtn.com BEGIN -->
-							<span class="likebtn-wrapper" data-theme="transparent" data-white_label="true" data-rich_snippet="true" data-identifier="<?php the_field('youtube_id'); ?>"></span>
-							<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-							<!-- LikeBtn.com END -->
-
 					<?php endforeach;
 					wp_reset_postdata();?>
 				</div>
