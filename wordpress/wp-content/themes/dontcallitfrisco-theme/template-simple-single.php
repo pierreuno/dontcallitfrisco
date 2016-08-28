@@ -2,7 +2,7 @@
 
 	<main role="main">
 		<!-- section -->
-		<section class="simple-single-page">
+		<section class="simple-single-page bottom-30">
 
 			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 

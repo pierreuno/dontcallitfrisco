@@ -1,6 +1,6 @@
 		<div class="featured-background">
 			<div class="container">
-				<div class="row bottom-30">
+				<div class="row bottom-10">
 					<div class="col-md-8 email-list-wrapper">
 						<div class="email-list">
 							<p class="email-list-title">JOIN OUR EMAIL LIST TO FIND OUT ABOUT NEW EPISODES</p>
@@ -16,17 +16,11 @@
 							<a href="https://www.facebook.com/dontcallitfriscoseries" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 							<a href="https://www.instagram.com/dcfseries" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 						</p>
+						<p class="text-right">&copy; 2016 DON'T CALL IT FRISCO</p>
 					</div>
 				</div>
-
-				<div class="row">
-					<p class="text-center">Copyright &copy; 2016 Don't Call It Frisco</p>
-				</div>
-
 			</div>
 		</div>
-
-
 
 		<?php wp_footer(); ?>
 
