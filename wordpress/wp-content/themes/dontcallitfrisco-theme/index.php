@@ -62,7 +62,7 @@
 	</div>
 
 
-	<div class="container">
+	<div class="container bottom-30">
 		<div class="row">
 			<div class="col-md-12">
 				<?php
