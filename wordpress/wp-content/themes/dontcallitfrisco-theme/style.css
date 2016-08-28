@@ -30,7 +30,7 @@ h2:before { content: ""; position: absolute; height:1px; width:100px; border-top
 
 .logo { width: 220px; margin: auto; }
 @media screen and (max-width: 992px) {
-  .logo { margin-bottom: 0px; }
+  .logo.margin-bottom-minus-53 { margin-bottom: 0px !important; }
   .navbar-nav>li.menu-spacer { display: none; }
   .navbar-nav>li { width:25% !important; float:left; }
 }
@@ -81,7 +81,7 @@ h2:before { content: ""; position: absolute; height:1px; width:100px; border-top
 .social-links .fa-facebook { margin-right:25px; }
 .social-links .fa-facebook, .fa-instagram { font-size: 30px; color: black; }
 @media screen and (max-width: 992px) {
-  .social-links { text-align: center; }
+  .footer p { text-align: center; }
   .email-list-wrapper .email-list { margin: 0 auto; }
 }
 

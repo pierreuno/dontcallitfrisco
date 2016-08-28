@@ -1,5 +1,5 @@
 		<div class="featured-background">
-			<div class="container">
+			<div class="footer container">
 				<div class="row bottom-10">
 					<div class="col-md-8 email-list-wrapper">
 						<div class="email-list">
