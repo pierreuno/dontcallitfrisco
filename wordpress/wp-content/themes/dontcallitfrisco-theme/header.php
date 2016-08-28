@@ -36,7 +36,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-
 		<?php wp_head(); ?>
 		<script>
         // conditionizr.com
@@ -62,10 +61,10 @@
 	      <div id="navbar">
 	        <ul class="nav navbar-nav">
 	          <li><a href="#"><span class="header"></span><span>Home</span></a></li>
-	          <li><a href="#"><span class="header"></span><span>Episodes</span></a></li>
+	          <li><a href="#episodes"><span class="header"></span><span>Episodes</span></a></li>
 						<li class="menu-spacer"><a></a></li>
 	          <li><a href="#"><span class="header"></span><span>Frisco</span></a></li>
-	          <li><a href="#"><span class="header"></span><span>About Us</a></li>
+	          <li><a href="/about-us"><span class="header"></span><span>About Us</a></li>
 	        </ul>
 	      </div><!--/.nav-collapse -->
 	    </div>
