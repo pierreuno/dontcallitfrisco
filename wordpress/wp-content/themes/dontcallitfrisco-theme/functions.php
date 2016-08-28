@@ -451,7 +451,7 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 }
 
 /* ACF Config */
-define( 'ACF_LITE', false );
+define( 'ACF_LITE', true );
 include_once('advanced-custom-fields/acf.php');
 if(function_exists("register_field_group"))
 {
@@ -489,6 +489,39 @@ if(function_exists("register_field_group"))
 					'param' => 'post_type',
 					'operator' => '==',
 					'value' => 'episodes',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+
+	register_field_group(array (
+		'id' => 'acf_post-custom-fields',
+		'title' => 'Post Custom Fields',
+		'fields' => array (
+			array (
+				'key' => 'field_57c2ec52cf204',
+				'label' => 'Display on Home page',
+				'name' => 'display_on_home_page',
+				'type' => 'true_false',
+				'message' => '',
+				'default_value' => 0,
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
 					'order_no' => 0,
 					'group_no' => 0,
 				),
