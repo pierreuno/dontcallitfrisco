@@ -25,7 +25,7 @@ p { font-size:12px; }
 
 .featured-background { background-color: rgba(215, 215, 215, 0.1); }
 .bottom-30 { padding-bottom: 30px; }
-.margin-bottom-minus-53 { margin-bottom: -53px; }
+.margin-bottom-minus-53 { margin-bottom: -53px !important; }
 
 .logo { width: 220px; margin: auto; }
 @media screen and (max-width: 992px) {
@@ -84,5 +84,10 @@ p { font-size:12px; }
   .email-list-wrapper .email-list { margin: 0 auto; }
 }
 
+.simple-single-page .header img { width: 100%; }
 .simple-single-page h1 { margin-top: -75px; color: white; text-transform: uppercase; font-size: 90px; margin-bottom: 20px; }
-.simple-single-page p { font-size: 14px; }
+.simple-single-page p { font-size: 14px;letter-spacing: 1px; }
+
+.simple-single-page .fts-simple-fb-wrapper img, .simple-single-page .fts-simple-fb-wrapper video { max-height: 600px; width: auto; }
+
+.fts-jal-fb-header { display: none !important; }

@@ -1,13 +1,14 @@
 <?php /* Template Name: Simple Single Page */ get_header(); ?>
 
-	<main role="main simple-single-page">
+	<main role="main">
 		<!-- section -->
-		<section>
+		<section class="simple-single-page">
 
 			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-				<?php the_post_thumbnail() ?>
-
+				<div class="header">
+					<?php the_post_thumbnail() ?>
+				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
