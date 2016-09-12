@@ -11,7 +11,7 @@
 				</div>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 padding-top-30">
+						<div class="col-md-8 col-md-offset-2 padding-top-30">
 							<?php the_content(); ?>
 						</div>
 					</div>

@@ -20,6 +20,12 @@ Version: 0.1.0
        url('fonts/GothamHTF-Book.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Impact';
+  src: local('Impact'),
+       url('fonts/impact.ttf') format('truetype');
+}
+
 
 html * { font-family:'GothamHTF-Medium'; }
 *:focus { outline:none; }
@@ -39,14 +45,15 @@ h2:before { content: ""; position: absolute; height:1px; width:100px; border-top
 .no-margin { margin:0; }
 
 .logo { width: 220px; margin: auto; }
+.logo * { font-family: 'Impact' !important; }
 @media screen and (max-width: 992px) {
   .logo.margin-bottom-minus-53 { margin-bottom: 0px !important; }
   .navbar-nav>li.menu-spacer { display: none; }
   .navbar-nav>li { width:25% !important; float:left; }
 }
-.logo a { text-decoration: none !important; font-family:'GothamHTF-Medium'  !important; font-weight:normal; font-size:12px; text-align: center; letter-spacing: 3px; color:#000  !important; text-transform: uppercase; opacity:1 !important; }
-.logo a .header { height:20px; font-size: 16px; width: 100%; letter-spacing: 5px; min-width: 190px;}
-.logo a .title { font-size: 45px; font-weight: bold; width: 100%; }
+.logo a { text-decoration: none !important; font-weight:normal; font-size:12px; text-align: center; letter-spacing: 3px; color:#000  !important; text-transform: uppercase; opacity:1 !important; }
+.logo a .header { height:20px; font-size: 16px; width: 100%; letter-spacing: 5px; min-width: 190px; }
+.logo a .title { font-size: 46px; font-weight: bold; width: 100%; }
 
 .navbar { padding-top: 20px; margin: 0px; padding-bottom: 30px; }
 .navbar-nav { width:100%; }
