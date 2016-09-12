@@ -1,7 +1,7 @@
 		<div class="featured-background">
 			<div class="footer container">
 				<div class="row bottom-10">
-					<div class="col-md-8 email-list-wrapper">
+					<div class="text-center col-md-12 email-list-wrapper">
 						<div class="email-list">
 							<p class="email-list-title">JOIN OUR EMAIL LIST TO FIND OUT ABOUT NEW EPISODES</p>
 							<input type="text" name="signup_email"/>
@@ -11,16 +11,34 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<p class="text-right social-links">
-							<a href="https://www.facebook.com/dontcallitfriscoseries" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="https://www.instagram.com/dcfseries" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						</p>
-						<p class="text-right">&copy; 2016 DON'T CALL IT FRISCO</p>
-					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="footer-wrapper">
+			<div class="footer container">
+				<div class="row social-footer">
+					<div class="col-md-12">
+						<p class="text-center social-links padding-top-30">
+							<a href="https://www.facebook.com/dontcallitfriscoseries" target="_blank"><i class="fa fa-facebook margin-right-25" aria-hidden="true"></i></a>
+							<a href="https://www.instagram.com/dcfseries" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</p>
+					</div>
+				</div>
+				<div class="row" style="padding-top:7px;font-size:11px;font-weight:500;letter-spacing:2.6px;">
+					<p>&copy; 2016 DON'T CALL IT FRISCO</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="sociale-media sociale-media-sticky">
+			<p class="social-links no-margin text-center">
+				<a href="https://www.facebook.com/dontcallitfriscoseries" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<br>
+				<a href="https://www.instagram.com/dcfseries" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</p>
+		</div>
+
 
 		<?php wp_footer(); ?>
 
@@ -29,7 +47,7 @@
 			(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
 			l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
+			ga('create', 'UA-83420302-1', 'dontcallitfrisco.tv');
 			ga('send', 'pageview');
 		</script>
 
