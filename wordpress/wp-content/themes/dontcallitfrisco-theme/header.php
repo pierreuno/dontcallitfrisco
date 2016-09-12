@@ -58,14 +58,26 @@
 					</a>
 				</div>
 
+				<?php
+				    global $post;
+				    $post_slug=$post->post_name;
+						$is_home = $post_slug == 'instragram-feed';
+						$is_about = $post_slug == 'about-us';
+						$is_blog = $post_slug == 'blog';
+				?>
+
 	      <div id="navbar">
 	        <ul class="nav navbar-nav">
-	          <li><a href="<?php echo home_url(); ?>"><span class="header"></span><span>Home</span></a></li>
-	          <li><a href="<?php echo home_url(); ?>#episodes"><span class="header"></span><span>Episodes</span></a></li>
+	          <li><a href="<?php echo home_url(); ?>"><span class="header"></span><span class="menu_home <?= $is_home ? "current_page" : "" ?>">Home</span><span></span></a></li>
+	          <li><a href="<?php echo home_url(); ?>#episodes"><span class="header"></span><span class="menu_episodes">Episodes</span></a></li>
 						<li class="menu-spacer"><a></a></li>
-	          <li><a href="/blog"><span class="header"></span><span>Blog</span></a></li>
-	          <li><a href="/about-us"><span class="header"></span><span>About Us</a></li>
+	          <li><a href="/blog"><span class="header"></span><span class="<?= $is_blog ? "current_page" : "" ?>">Blog</span></a></li>
+	          <li><a href="/about-us"><span class="header"></span><span class="<?= $is_about ? "current_page" : "" ?>" >About Us</a></li>
 	        </ul>
 	      </div><!--/.nav-collapse -->
 	    </div>
 	  </nav>
+
+
+		<style>
+</style>

@@ -11,8 +11,7 @@
 				</div>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
-							<h1><?php the_title(); ?></h1>
+						<div class="col-md-12 padding-top-30">
 							<?php the_content(); ?>
 						</div>
 					</div>
