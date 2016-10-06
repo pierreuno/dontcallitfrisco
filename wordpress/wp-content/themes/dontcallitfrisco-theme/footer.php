@@ -1,4 +1,6 @@
-		<div class="featured-background">
+	<div style="height:139px;width:100%;"></div>
+	<div style="height:139px; position:fixed; bottom:0; width:100%;">
+		<div class="" style="background-color:#fbfbfb;">
 			<div class="footer container">
 				<div class="row bottom-10">
 					<div class="text-center col-md-12 email-list-wrapper">
@@ -30,6 +32,8 @@
 				</div>
 			</div>
 		</div>
+
+	</div>
 
 		<div class="sociale-media sociale-media-sticky">
 			<p class="social-links no-margin text-center">

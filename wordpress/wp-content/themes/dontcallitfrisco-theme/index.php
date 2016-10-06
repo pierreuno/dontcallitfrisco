@@ -52,7 +52,6 @@
 									</a>
 								</div>
 								<h4><?php the_title(); ?></h4>
-								<p class="short-description"><?php the_excerpt(); ?></p>
 							</div>
 					<?php endforeach;
 					wp_reset_postdata();?>
