@@ -64,6 +64,7 @@ h2:before { content: ""; position: absolute; height:1px; width:100px; border-top
 .navbar-nav>li>a>span { display:block; }
 .nav>li>a:hover { background-color: #ffffff; }
 .nav.navbar-nav a span.current_page { border-bottom: solid 2px #000000; display: inline; padding-bottom: 8px;}
+.nav.navbar-nav a:hover span.menu_link { border-bottom: solid 2px #000000; display: inline; padding-bottom: 8px;}
 
 .play-video { position: relative; display: block; }
 .play-video img { width: 100%; }
