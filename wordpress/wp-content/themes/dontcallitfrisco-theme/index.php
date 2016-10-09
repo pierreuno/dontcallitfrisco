@@ -11,7 +11,7 @@
 						setup_postdata( $post );
 						if( get_field('featured_episode', $post->ID)[0] == 1 ){ ?>
 							<a href="#" class="play-video" data-youtube-id="<?php the_field('youtube_id'); ?>">
-								<?php the_post_thumbnail('featured') ?>
+								<?php the_post_thumbnail('featured', array( 'title' => get_the_title() )) ?>
 								<span class="glyphicon glyphicon-play play-button"></span>
 							</a>
 					<?php } endforeach;
@@ -48,10 +48,10 @@
 										 data-youtube-id="<?php the_field('youtube_id'); ?>"
 										 data-featured-image="<?php the_post_thumbnail_url('featured'); ?>">
 										<span class="glyphicon glyphicon-play play-button"></span>
-										<?php the_post_thumbnail('medium') ?>
+										<?php the_post_thumbnail('medium', array( 'title' => get_the_title() )) ?>
 									</a>
 								</div>
-								<h4><?php the_title(); ?></h4>
+								<h3><?php the_title(); ?></h3>
 							</div>
 					<?php endforeach;
 					wp_reset_postdata();?>

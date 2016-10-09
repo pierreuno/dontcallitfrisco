@@ -100,7 +100,7 @@ p{
  .video-library .video-entity .play-button:before { opacity: 0.7; box-shadow: outset 0 2px 2px 0 rgba(0, 0, 0, 0.17); }
  .video-library .video-entity:hover .play-button { display:block; }
  .video-library .video-entity img { width:100%; }
- .video-library .video-entity h4 { text-transform:uppercase; font-size:12px; float:left; width:35%; }
+ .video-library .video-entity h3 { text-transform:uppercase; font-size:12px; float:left; width:35%; }
  .video-library .video-entity p.short-description { float:left; width:65%; margin-top: 10px; font-size: 10px;}
 
 
