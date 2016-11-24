@@ -32,8 +32,8 @@ html * { font-family:'GothamHTF-Medium'; }
 a { color: #000000; text-decoration: none; }
 p { font-size:12px; }
 
-h2 { text-transform: uppercase; padding-left: 120px; font-size:14px; display: inline-block; position: relative; margin-bottom: 15px; }
-h2:before { content: ""; position: absolute; height:1px; width:100px; border-top: solid 2px #b1b1b1; left: 0px; top: 5px; }
+h1 { text-transform: uppercase; padding-left: 120px; font-size:14px; display: inline-block; position: relative; margin-bottom: 15px; }
+h1:before { content: ""; position: absolute; height:1px; width:100px; border-top: solid 2px #b1b1b1; left: 0px; top: 5px; }
 
 .nav>li>a { padding: 10px 0px !important; }
 
@@ -95,7 +95,7 @@ h2:before { content: ""; position: absolute; height:1px; width:100px; border-top
 .video-library .video-entity .play-button:before { opacity: 0.7; box-shadow: outset 0 2px 2px 0 rgba(0, 0, 0, 0.17); }
 .video-library .video-entity:hover .play-button { display:block; }
 .video-library .video-entity img { width:100%; }
-.video-library .video-entity h3 { text-transform:uppercase; font-size:12px; float:left; }
+.video-library .video-entity h2 { text-transform:uppercase; font-size:12px; float:left; }
 .video-library .video-entity p.short-description { float:left; width:65%; margin-top: 10px; font-size: 10px;}
 
 
@@ -113,6 +113,7 @@ h2:before { content: ""; position: absolute; height:1px; width:100px; border-top
 
 .footer-wrapper { background-color:#000000; color:#ffffff; text-align:center; }
 
+.simple-single-page .header { max-height: 500px; overflow: hidden; }
 .simple-single-page .header img { width: 100%; }
 .simple-single-page * { font-family:'GothamHTF-Book'; }
 .simple-single-page p { font-size: 14px;letter-spacing: 1px; font-family: 'GothamHTF-Book'}

@@ -34,7 +34,7 @@
 	<div class="container" id="episodes">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Episodes</h2>
+				<h1>Episodes</h1>
 				<div class="row video-library">
 					<?php
 					$args = array( 'order'=> 'DESC', 'post_type' => 'episodes' );
@@ -51,7 +51,7 @@
 										<?php the_post_thumbnail('medium', array( 'title' => get_the_title() )) ?>
 									</a>
 								</div>
-								<h3><?php the_title(); ?></h3>
+								<h2><?php the_title(); ?></h2>
 							</div>
 					<?php endforeach;
 					wp_reset_postdata();?>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
-		<meta charset="<?php bloginfo('charset'); ?>">
+		<meta charset="UTF-8">
 		<title><?php wp_title(''); ?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
