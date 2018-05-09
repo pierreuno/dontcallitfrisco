@@ -60,10 +60,13 @@
 
 				<?php
 				    global $post;
-				    $post_slug=$post->post_name;
+				    $post_slug = $post->post_name;
 						$is_home = $post_slug == 'home';
+						$is_season_1 = $post_slug == 'season-1';
+						$is_season_2 = $post_slug == 'season-2';
 						$is_about = $post_slug == 'about-us';
 						$is_blog = $post_slug == 'blog';
+						$is_press = $post_slug == 'press';
 
 						if(isset($_GET['debug']) && !empty($_GET['debug']) ){
 							echo $post_slug;
@@ -73,8 +76,10 @@
 	      <div id="navbar">
 	        <ul class="nav navbar-nav">
 	          <li><a href="<?php echo home_url(); ?>"><span class="header"></span><span class="menu_link menu_home <?= $is_home ? "current_page" : "" ?>">Home</span><span></span></a></li>
-	          <li><a href="<?php echo home_url(); ?>#episodes"><span class="header"></span><span class="menu_link menu_episodes">Episodes</span></a></li>
+	          <li><a href="/season-1"><span class="header"></span><span class="menu_link  <?= $is_season_1 ? "current_page" : "" ?>">Season 1</span></a></li>
+						<li><a href="/season-2"><span class="header"></span><span class="menu_link  <?= $is_season_2 ? "current_page" : "" ?>">Season 2</span></a></li>
 						<li class="menu-spacer"><a></a></li>
+						<li><a href="/press"><span class="header"></span><span class="menu_link <?= $is_press ? "current_page" : "" ?>">Press</span></a></li>
 	          <li><a href="/blog"><span class="header"></span><span class="menu_link <?= $is_blog ? "current_page" : "" ?>">Blog</span></a></li>
 	          <li><a href="/about-us"><span class="header"></span><span class="menu_link <?= $is_about ? "current_page" : "" ?>" >About Us</a></li>
 	        </ul>

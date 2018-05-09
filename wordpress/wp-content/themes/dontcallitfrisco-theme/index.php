@@ -5,7 +5,12 @@
 			<div class="row">
 				<div class="col-md-12 play-video-wrapper">
 					<?php
-					$args = array( 'order'=> 'DESC', 'post_type' => 'episodes');
+					$args = array(
+						'category_name' => 'season-1',
+						'order' => 'DESC',
+						'orderby' => 'title',
+						'post_type' => 'episodes'
+					);
 					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) :
 						setup_postdata( $post );
@@ -25,7 +30,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p class="text-center text-uppercase main-video-title">DCF is a web series that follows a Boston transplant while he tries to adjust to his weird new life in San Francisco</p>
+					<p class="text-center text-uppercase main-video-title">DCF is a comedy show that follows a Boston transplant while he tries to adjust to his weird new life in San Francisco</p>
 				</div>
 			</div>
 		</div>
@@ -37,9 +42,6 @@
 				<h1>Episodes</h1>
 				<div class="row video-library">
 					<?php
-					$args = array( 'order'=> 'DESC', 'post_type' => 'episodes' );
-					$myposts = get_posts( $args );
-
 					foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 							<div class="col-md-4 video-entity">
 								<div class="video-thumbnail">
