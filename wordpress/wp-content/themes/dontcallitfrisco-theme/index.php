@@ -6,8 +6,7 @@
 				<div class="col-md-12 play-video-wrapper">
 					<?php
 					$args = array(
-						'category_name' => 'season-1',
-						'order' => 'DESC',
+						'order' => 'ASC',
 						'orderby' => 'title',
 						'post_type' => 'episodes'
 					);
@@ -19,7 +18,9 @@
 								<?php the_post_thumbnail('featured', array( 'title' => get_the_title() )) ?>
 								<span class="glyphicon glyphicon-play play-button"></span>
 							</a>
-					<?php } endforeach;
+					<?php
+					break;
+					} endforeach;
 					wp_reset_postdata();?>
 				</div>
 			</div>
@@ -42,6 +43,15 @@
 				<h1>Episodes</h1>
 				<div class="row video-library">
 					<?php
+					$count = 0;
+					$args = array(
+						'order' => 'DESC',
+						'orderby' => 'title',
+						'post_type' => 'episodes',
+						'posts_per_page' => -1,
+						'numberposts' => -1
+					);
+					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 							<div class="col-md-4 video-entity">
 								<div class="video-thumbnail">
@@ -55,7 +65,14 @@
 								</div>
 								<h2><?php the_title(); ?></h2>
 							</div>
-					<?php endforeach;
+					<?php
+					if ($count==2){
+						echo '</div><div class="row video-library">';
+						$count=0;
+					}else{
+						$count++;
+					}
+					endforeach;
 					wp_reset_postdata();?>
 				</div>
 			</div>

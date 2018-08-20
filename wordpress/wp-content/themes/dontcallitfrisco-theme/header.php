@@ -75,15 +75,49 @@
 
 	      <div id="navbar">
 	        <ul class="nav navbar-nav">
-	          <li><a href="<?php echo home_url(); ?>"><span class="header"></span><span class="menu_link menu_home <?= $is_home ? "current_page" : "" ?>">Home</span><span></span></a></li>
 	          <li><a href="/season-1"><span class="header"></span><span class="menu_link  <?= $is_season_1 ? "current_page" : "" ?>">Season 1</span></a></li>
 						<li><a href="/season-2"><span class="header"></span><span class="menu_link  <?= $is_season_2 ? "current_page" : "" ?>">Season 2</span></a></li>
-						<li class="menu-spacer"><a></a></li>
-						<li><a href="/press"><span class="header"></span><span class="menu_link <?= $is_press ? "current_page" : "" ?>">Press</span></a></li>
-	          <li><a href="/blog"><span class="header"></span><span class="menu_link <?= $is_blog ? "current_page" : "" ?>">Blog</span></a></li>
+						<li class="small-width"><a href="/press"><span class="header"></span><span class="menu_link <?= $is_press ? "current_page" : "" ?>">Press</span></a></li>
+	          <li class="small-width"><a href="/blog"><span class="header"></span><span class="menu_link <?= $is_blog ? "current_page" : "" ?>">Blog</span></a></li>
 	          <li><a href="/about-us"><span class="header"></span><span class="menu_link <?= $is_about ? "current_page" : "" ?>" >About Us</a></li>
+						<li style="margin-top:-4px;">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="8BW3LJ4P954QA">
+							<input type="submit" class="support-us" name="submit" value="Support Us" alt="PayPal - The safer, easier way to pay online!">
+							<div class="credit-cards">
+								<div class="visa"></div>
+								<div class="mastercard"></div>
+								<div class="amex"></div>
+								<div class="unknown"></div>
+							</div>
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</form>
+						</li>
 	        </ul>
 	      </div><!--/.nav-collapse -->
+
+				<div id="navbar-mobile">
+					<ul class="nav navbar-nav seasons">
+						<li class="small-width">&nbsp</li>
+						<li><a href="/season-1"><span class="header"></span><span class="menu_link  <?= $is_season_1 ? "current_page" : "" ?>">Season 1</span></a></li>
+						<li><a href="/season-2"><span class="header"></span><span class="menu_link  <?= $is_season_2 ? "current_page" : "" ?>">Season 2</span></a></li>
+						<li class="small-width">&nbsp</li>
+					</ul>
+					<ul class="nav navbar-nav others">
+						<li class="small-width"><a href="/press"><span class="header"></span><span class="menu_link <?= $is_press ? "current_page" : "" ?>">Press</span></a></li>
+						<li class="small-width"><a href="/blog"><span class="header"></span><span class="menu_link <?= $is_blog ? "current_page" : "" ?>">Blog</span></a></li>
+						<li><a href="/about-us"><span class="header"></span><span class="menu_link <?= $is_about ? "current_page" : "" ?>" >About Us</a></li>
+						<li style="margin-top:5px;">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="8BW3LJ4P954QA">
+							<input type="submit" class="support-us" name="submit" value="Support Us" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</form>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
 	    </div>
 	  </nav>
 

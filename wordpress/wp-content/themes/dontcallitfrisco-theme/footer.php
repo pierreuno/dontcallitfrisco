@@ -31,7 +31,7 @@
 		<div class="footer-wrapper">
 			<div class="footer container">
 				<div class="row" style="padding-top:7px;font-size:11px;font-weight:500;letter-spacing:2.6px;">
-					<p>&copy; 2016 DON'T CALL IT FRISCO</p>
+					<p>&copy; <?php echo date("Y"); ?> DON'T CALL IT FRISCO</p>
 				</div>
 			</div>
 		</div>

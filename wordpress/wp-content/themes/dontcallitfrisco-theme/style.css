@@ -92,31 +92,17 @@ h1:before {
 
 .logo {
   width: 220px;
-  margin: auto;
 }
 
 .logo * {
   font-family: 'Impact' !important;
 }
 
-@media screen and (max-width: 992px) {
-  .logo.margin-bottom-minus-53 {
-    margin-bottom: 0px !important;
-  }
-  .navbar-nav>li.menu-spacer {
-    display: none;
-  }
-  .navbar-nav>li {
-    width: 25% !important;
-    float: left;
-  }
-}
-
 .logo a {
   text-decoration: none !important;
   font-weight: normal;
   font-size: 12px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 3px;
   color: #000 !important;
   text-transform: uppercase;
@@ -137,6 +123,18 @@ h1:before {
   width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+  .logo {
+    margin: auto;
+  }
+  .logo a {
+    text-align: center;
+  }
+  .logo.margin-bottom-minus-53 {
+    margin-bottom: 0px !important;
+  }
+}
+
 .navbar {
   padding-top: 20px;
   margin: 0px;
@@ -148,11 +146,68 @@ h1:before {
 }
 
 .navbar-nav>li {
-  width: 14.28%;
+  width: 15.5%;
 }
 
-.navbar-nav>li.logo {
-  min-width:
+.navbar-nav>li.small-width {
+  width: 12%;
+}
+
+.support-us {
+  background-color: #fec859;
+  border: none;
+  border-radius: 18px;
+  color: #3a2c0f;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+}
+
+.credit-cards {
+  height: 20px;
+  margin: 5px -10px 0px 7px;
+  min-width: 148px;
+}
+
+#navbar {
+  display: block;
+}
+
+#navbar-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  #navbar {
+    display: none;
+  }
+  #navbar-mobile {
+    display: block;
+  }
+}
+
+.credit-cards div {
+  background-size: 37px 20px !important;
+  float: left;
+  width: 37px;
+  height: 20px;
+}
+
+.credit-cards div.visa {
+  background: url('img/card-logo-visa.svg');
+}
+
+.credit-cards div.mastercard {
+  background: url('img/card-logo-mastercard.svg');
+}
+
+.credit-cards div.amex {
+  background: url('img/card-logo-amex.svg');
+}
+
+.credit-cards div.unknown {
+  background: url('img/card-logo-unknown.svg');
 }
 
 .navbar-nav>li>a {
@@ -175,6 +230,35 @@ h1:before {
 
 .nav>li>a:hover {
   background-color: #ffffff;
+}
+
+.nav.navbar-nav {
+  margin-left: 180px;
+}
+
+@media screen and (max-width: 992px) {
+  .nav.navbar-nav {
+    margin-left: 0;
+  }
+  .navbar-nav>li {
+    float: left;
+  }
+}
+
+#navbar-mobile .nav.navbar-nav.seasons li {
+  width: 40%;
+}
+
+#navbar-mobile .nav.navbar-nav.seasons li.small-width {
+  width: 10%;
+}
+
+#navbar-mobile .nav.navbar-nav.others li {
+  width: 30%;
+}
+
+#navbar-mobile .nav.navbar-nav.others li.small-width {
+  width: 20%;
 }
 
 .nav.navbar-nav a span.current_page {
